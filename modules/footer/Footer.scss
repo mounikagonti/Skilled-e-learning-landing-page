@@ -1,0 +1,34 @@
+.footer {
+  background-color: #13183e;
+  height: 80px;
+  margin-top: 100px;
+  .container {
+    height: 100%;
+    max-width: 1320px;
+    margin: auto;
+    .footer_wrapper {
+      height: 100%;
+      @include displayCenter(center, space-between);
+      color: #ffff;
+      @include mQ($md) {
+        padding: 10px;
+      }
+      @include mQ($sm) {
+        padding: 10px;
+      }
+      .footer_btn {
+        padding: 10px 15px;
+        color: #ffff;
+        background-image: linear-gradient(#9f3ad4, #e52aaa);
+        border-radius: 50px;
+        box-shadow: rgba(255, 253, 253, 0.24) 0px 3px 8px;
+
+        transition-property: transform;
+        transition-duration: 1s;
+      }
+      .footer_btn:hover {
+        transform: rotateY(180deg);
+      }
+    }
+  }
+}

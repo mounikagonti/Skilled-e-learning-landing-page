@@ -1,0 +1,144 @@
+.card {
+  margin-top: 25px;
+  .container {
+    max-width: 1320px;
+    margin: auto;
+    .card_wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 15px;
+      row-gap: 50px;
+      @include mQ($md) {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px;
+      }
+      @include mQ($sm) {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 10px;
+      }
+      .cards {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 10px;
+        border-radius: 5px;
+
+        p {
+          margin-top: 15px;
+        }
+
+        h5 {
+          color: #f43697;
+          margin-top: 25px;
+        }
+      }
+      .card1 {
+        background-image: linear-gradient(#fd6751, #f43697);
+        color: #ffff;
+      }
+      .card2 {
+        position: relative;
+        .man {
+          position: absolute;
+          top: -25px;
+          z-index: 1;
+          @include displayCenter(center, center);
+          width: 40px;
+          height: 40px;
+          background-image: linear-gradient(#fd6751, #f43697);
+          color: #ffff;
+          border-radius: 50%;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          .icon {
+            font-size: 20px;
+          }
+        }
+        h3 {
+          margin-top: 20px;
+        }
+      }
+      .card3 {
+        position: relative;
+        .gallery {
+          position: absolute;
+          top: -25px;
+          z-index: 1;
+          @include displayCenter(center, center);
+          width: 40px;
+          height: 40px;
+          background-image: linear-gradient(#fd6751, #f43697);
+          color: #ffff;
+          border-radius: 50%;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          .icon {
+            font-size: 20px;
+          }
+        }
+        h3 {
+          margin-top: 20px;
+        }
+      }
+      .card4 {
+        position: relative;
+        .camera {
+          position: absolute;
+          top: -25px;
+          z-index: 1;
+          @include displayCenter(center, center);
+          width: 40px;
+          height: 40px;
+          background-image: linear-gradient(#fd6751, #f43697);
+          color: #ffff;
+          border-radius: 50%;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          .icon {
+            font-size: 20px;
+          }
+        }
+        h3 {
+          margin-top: 20px;
+        }
+      }
+      .card5 {
+        position: relative;
+        .bitcoin {
+          position: absolute;
+          top: -25px;
+          z-index: 1;
+          @include displayCenter(center, center);
+          width: 40px;
+          height: 40px;
+          background-image: linear-gradient(#fd6751, #f43697);
+          color: #ffff;
+          border-radius: 50%;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          .icon {
+            font-size: 20px;
+          }
+        }
+        h3 {
+          margin-top: 20px;
+        }
+      }
+      .card6 {
+        position: relative;
+        .bag {
+          position: absolute;
+          top: -25px;
+          z-index: 1;
+          @include displayCenter(center, center);
+          width: 40px;
+          height: 40px;
+          background-image: linear-gradient(#fd6751, #f43697);
+          color: #ffff;
+          border-radius: 50%;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          .icon {
+            font-size: 20px;
+          }
+        }
+        h3 {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
